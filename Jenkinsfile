@@ -11,14 +11,14 @@ pipeline {
     }
 
     environment {
-        IMAGE = 'YOUR_DOCKERHUB_USERNAME/industrial-maintenance'
+        IMAGE = 'sarves816/industrial-maintenance'
     }
 
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/industrial-predictive-maintenance.git'
+                    url: 'https://github.com/sarves816/Assessment_10.git'
             }
         }
 
